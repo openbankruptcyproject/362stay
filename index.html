@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<link rel="preconnect" href="https://www.googletagmanager.com">
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-FTWLM223G7"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-FTWLM223G7');
+  gtag('config', 'G-053Z64N82F');
+</script>
+<meta charset="UTF-8">
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Section 362: The Automatic Stay in Bankruptcy | automaticstay.org</title>
+<meta name="description" content="Complete guide to the automatic stay under 11 U.S.C. Section 362. Learn what it stops, when it takes effect, creditor violations, repeat filer limits, and relief from stay motions.">
+<meta name="keywords" content="automatic stay, Section 362, bankruptcy protection, creditor violations, relief from stay, 362(c)(3), 362(c)(4), 362(k), bankruptcy filing">
+<link rel="canonical" href="https://automaticstay.org/">
+
+<!-- Open Graph -->
+<meta property="og:title" content="Section 362: The Automatic Stay in Bankruptcy">
+<meta property="og:description" content="Complete guide to the automatic stay under 11 U.S.C. Section 362. What it stops, creditor violations, repeat filer limits, and how to enforce your rights.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://automaticstay.org/">
+<meta property="og:site_name" content="automaticstay.org">
+
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Section 362: The Automatic Stay in Bankruptcy">
+<meta name="twitter:description" content="Complete guide to the automatic stay under 11 U.S.C. Section 362. What it stops, creditor violations, repeat filer limits, and how to enforce your rights.">
+
+<style>
+  :root {
+    --bg: #0d1117;
+    --surface: #161b22;
+    --border: #30363d;
+    --text: #e6edf3;
+    --text-muted: #9eaab6;
+    --accent: #58a6ff;
+    --green: #3fb950;
+    --red: #f85149;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.7;
+  }
+  a { color: var(--accent); text-decoration: none; }
+  a:hover { text-decoration: underline; }
+  a:focus-visible, button:focus-visible {
+    outline: 2px solid var(--accent);
+    outline-offset: 2px;
+  }
+  .skip-link {
+    position: absolute; left: -9999px; top: auto;
+    width: 1px; height: 1px; overflow: hidden; z-index: 9999;
+    padding: 1rem; background: #238636; color: #fff;
+    font-weight: 600; text-decoration: none;
+  }
+  .skip-link:focus {
+    position: fixed; top: 10px; left: 10px;
+    width: auto; height: auto; overflow: visible;
+  }
+
+  /* Nav */
+  nav {
+    background: var(--surface);
+    border-bottom: 1px solid var(--border);
+    padding: 0.75rem 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+  }
+  nav .site-name {
+    color: #f0f6fc;
+    font-weight: 700;
+    font-size: 1.1rem;
+    text-decoration: none;
+  }
+  nav .site-name:hover { text-decoration: none; color: var(--accent); }
+  .nav-links { display: flex; gap: 1.25rem; flex-wrap: wrap; align-items: center; }
+  .nav-links a { color: var(--text-muted); font-size: 0.9rem; }
+  .nav-links a:hover { color: var(--accent); text-decoration: none; }
+  .nav-links a.active { color: var(--accent); font-weight: 600; }
+  .hamburger {
+    display: none; background: none; border: none; color: var(--text);
+    font-size: 1.5rem; cursor: pointer; padding: 0.25rem;
+  }
+
+  /* Header */
+  header {
+    background: var(--surface);
+    border-bottom: 1px solid var(--border);
+    padding: 3rem 2rem;
+    text-align: center;
+  }
+  header h1 {
+    color: #f0f6fc;
+    font-size: 2rem;
+    margin-bottom: 0.75rem;
+  }
+  header h1 .accent { color: var(--accent); }
+  header .subtitle {
+    color: var(--text-muted);
+    font-size: 1.05rem;
+    max-width: 700px;
+    margin: 0 auto;
+  }
+
+  /* Main */
+  main { max-width: 820px; margin: 0 auto; padding: 2rem 1.5rem; }
+
+  /* Content sections */
+  .content-section {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    padding: 2rem;
+    margin-bottom: 1.5rem;
+  }
+  .content-section h2 {
+    color: #f0f6fc;
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid var(--border);
+  }
+  .content-section h3 {
+    color: #f0f6fc;
+    font-size: 1.1rem;
+    margin: 1.5rem 0 0.75rem;
+  }
+  .content-section p {
+    color: var(--text);
+    margin-bottom: 0.75rem;
+    font-size: 0.95rem;
+  }
+  .content-section ul, .content-section ol {
+    margin: 0.75rem 0 0.75rem 1.5rem;
+    color: var(--text);
+    font-size: 0.95rem;
+  }
+  .content-section li { margin-bottom: 0.4rem; }
+
+  /* Page links grid */
+  .page-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 1rem;
+    margin: 1.5rem 0;
+  }
+  .page-card {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    padding: 1.25rem;
+    transition: border-color 0.2s;
+  }
+  .page-card:hover { border-color: var(--accent); }
+  .page-card h3 {
+    color: #f0f6fc;
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+  }
+  .page-card h3 a { color: #f0f6fc; }
+  .page-card h3 a:hover { color: var(--accent); text-decoration: none; }
+  .page-card p { color: var(--text-muted); font-size: 0.85rem; }
+
+  /* Highlight box */
+  .highlight-box {
+    background: #21262d;
+    border-left: 3px solid var(--accent);
+    padding: 1rem 1.25rem;
+    border-radius: 0 6px 6px 0;
+    margin: 1rem 0;
+  }
+  .highlight-box.warning {
+    border-left-color: var(--red);
+  }
+  .highlight-box.success {
+    border-left-color: var(--green);
+  }
+  .highlight-box p { margin-bottom: 0.5rem; }
+  .highlight-box p:last-child { margin-bottom: 0; }
+
+  /* Network footer */
+  .network-footer {
+    background: var(--surface);
+    border-top: 1px solid var(--border);
+    padding: 2rem;
+    text-align: center;
+    margin-top: 3rem;
+  }
+  .network-footer p {
+    color: var(--text-muted);
+    font-size: 0.85rem;
+    margin-bottom: 0.5rem;
+  }
+  .network-footer .links {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-top: 0.75rem;
+  }
+  .network-footer .links a {
+    color: var(--text-muted);
+    font-size: 0.85rem;
+  }
+  .network-footer .links a:hover { color: var(--accent); }
+  .network-footer .disclaimer {
+    margin-top: 1rem;
+    font-size: 0.75rem;
+    color: var(--text-muted);
+  }
+
+  /* FAQ styling */
+  .faq-item { margin-bottom: 1.25rem; }
+  .faq-item h3 { margin-top: 0; }
+
+  @media (max-width: 600px) {
+    header h1 { font-size: 1.5rem; }
+    main { padding: 1.5rem 1rem; }
+    .content-section { padding: 1.25rem; }
+    nav { padding: 0.75rem 1rem; }
+    .hamburger { display: block; }
+    .nav-links { display: none; width: 100%; flex-direction: column; gap: 0.75rem; padding-top: 0.75rem; }
+    .nav-links.open { display: flex; }
+  }
+</style>
+
+<!-- FAQ Schema -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What does the automatic stay stop?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The automatic stay under 11 U.S.C. Section 362(a) stops foreclosures, repossessions, wage garnishments, lawsuits, collection calls, utility shutoffs, and most other creditor actions against the debtor or the debtor's property. It takes effect immediately when the bankruptcy petition is filed."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How long does the automatic stay last?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "For first-time filers, the automatic stay lasts for the duration of the bankruptcy case -- typically 3-5 years in Chapter 13 or 3-6 months in Chapter 7. For repeat filers, special limits apply under Sections 362(c)(3) and 362(c)(4)."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can creditors get around the automatic stay?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Creditors can file a motion for relief from stay asking the court to allow them to proceed with foreclosure, repossession, or other collection actions. The court will grant relief if the creditor shows cause, such as lack of adequate protection, or that the debtor has no equity in the property and it is not necessary for reorganization."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What if a creditor violates the automatic stay?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Under 11 U.S.C. Section 362(k), an individual debtor injured by a willful violation of the automatic stay can recover actual damages, costs, attorney fees, and in appropriate circumstances, punitive damages. The debtor must file a motion for contempt in the bankruptcy court."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does the automatic stay apply to all debts?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No. Section 362(b) lists over 25 exceptions. Criminal proceedings, domestic support obligations (child support and alimony), certain tax proceedings, and some eviction actions are not stopped by the automatic stay. Additionally, repeat filers may receive reduced or no stay protection under Sections 362(c)(3) and 362(c)(4)."
+      }
+    }
+  ]
+}
+</script>
+
+<!-- BreadcrumbList Schema -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "automaticstay.org",
+      "item": "https://automaticstay.org/"
+    }
+  ]
+}
+</script>
+
+<!-- WebPage Schema -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "name": "Section 362: The Automatic Stay in Bankruptcy",
+  "description": "Complete guide to the automatic stay under 11 U.S.C. Section 362. Learn what it stops, when it takes effect, creditor violations, repeat filer limits, and relief from stay motions.",
+  "url": "https://automaticstay.org/",
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "automaticstay.org",
+    "url": "https://automaticstay.org/"
+  },
+  "breadcrumb": {
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://automaticstay.org/"
+      }
+    ]
+  }
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Article",
+      "headline": "The Automatic Stay in Bankruptcy",
+      "description": "Complete guide to the automatic stay under 11 U.S.C. Section 362. Learn what it stops, when it takes effect, creditor violations, repeat filer limits, and relie",
+      "author": {
+        "@type": "Organization",
+        "name": "Open Bankruptcy Project"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Open Bankruptcy Project",
+        "url": "https://1328f.org"
+      },
+      "datePublished": "2026-03-28",
+      "dateModified": "2026-03-29",
+      "mainEntityOfPage": "https://automaticstay.org/"
+    },
+    {
+      "@type": "SiteNavigationElement",
+      "name": "BTN Network",
+      "url": [
+        "https://1328f.com",
+        "https://1328f.org",
+        "https://automaticstay.org",
+        "https://341meeting.org",
+        "https://523a.org",
+        "https://109g.org",
+        "https://727a8.com",
+        "https://meanstest.org",
+        "https://chapter7vs13.org",
+        "https://howtofilebankruptcy.org"
+      ]
+    }
+  ]
+}
+</script>
+
+</head>
+<body>
+
+<a href="#main-content" class="skip-link">Skip to main content</a>
+
+<nav aria-label="Main navigation">
+  <a href="/" class="site-name">automaticstay.org</a>
+  <button class="hamburger" aria-label="Toggle navigation menu" aria-expanded="false" onclick="var n=this.nextElementSibling;var open=n.classList.toggle('open');this.setAttribute('aria-expanded',open);">&#9776;</button>
+  <div class="nav-links">
+    <a href="/" class="active">Home</a>
+    <a href="/what-it-stops.html">What It Stops</a>
+    <a href="/violations.html">Violations</a>
+    <a href="/serial-filer-limits.html">Repeat Filers</a>
+    <a href="/relief-from-stay.html">Relief from Stay</a>
+    <a href="/exceptions.html">Exceptions</a>
+  </div>
+</nav>
+
+<header>
+  <h1>The <span class="accent">Automatic Stay</span> in Bankruptcy</h1>
+  <p class="subtitle">A plain-language guide to 11 U.S.C. Section 362 -- the federal law that stops creditors in their tracks the moment you file for bankruptcy.</p>
+</header>
+
+<main id="main-content">
+
+  <div class="content-section">
+    <h2>What Is the Automatic Stay?</h2>
+    <p>The automatic stay is one of the most powerful protections in federal law. The moment a bankruptcy petition is filed -- whether Chapter 7, Chapter 11, Chapter 12, or Chapter 13 -- an immediate, court-ordered injunction takes effect against virtually all creditor activity. No separate motion is required. No judge needs to sign an order. It is automatic.</p>
+    <p>The legal authority comes from <a href="https://www.law.cornell.edu/uscode/text/11/362">11 U.S.C. Section 362</a>. Subsection (a) lists the specific acts that are stayed, and subsection (b) lists the exceptions. The stay applies to actions against the debtor personally and against property of the bankruptcy estate.</p>
+    <p>For most people filing bankruptcy, the automatic stay is the first tangible relief they experience. Foreclosure sales are halted. Repossession agents must stop. Wage garnishments cease. Lawsuits are frozen. Collection calls must end. This breathing room is the foundation that makes bankruptcy reorganization -- or an orderly liquidation -- possible.</p>
+
+    <h3>When Does the Stay Take Effect?</h3>
+    <p>The automatic stay takes effect at the exact moment the bankruptcy petition is filed with the clerk of the bankruptcy court. In the era of electronic filing, this means the precise date and time stamp on the petition. Creditors who take action after that moment -- even if they did not yet know about the filing -- are in violation of the stay.</p>
+    <p>The filing creates a presumption of validity. Even if the petition is later dismissed, any creditor action taken while the stay was in effect is void or voidable. Courts have consistently held that creditors have an affirmative duty to reverse actions taken in violation of the stay, including returning repossessed vehicles, reversing garnishments, and vacating foreclosure sales.</p>
+
+    <h3>Who Does the Stay Protect?</h3>
+    <p>The stay protects the debtor (the person or entity that filed), property of the debtor, and property of the bankruptcy estate. In Chapter 13 cases, the stay extends additional protections to co-debtors on consumer debts under <a href="https://www.law.cornell.edu/uscode/text/11/1301">11 U.S.C. Section 1301</a> -- meaning a creditor cannot go after a co-signer while the <a href="https://chapter13plan.org" title="Chapter 13 Repayment Plan -- Open Bankruptcy Project" target="_blank" rel="noopener">Chapter 13 plan</a> is in effect.</p>
+    <p>The stay does not generally protect non-filing co-debtors in Chapter 7 cases, guarantors on business debts, or separate legal entities. If a debtor is an individual who owns a corporation, the automatic stay protects the individual but does not automatically extend to the corporation (unless the corporation also filed).</p>
+  </div>
+
+  <div class="content-section">
+    <h2>What the Automatic Stay Stops</h2>
+    <p>Section 362(a) lists the actions that are stayed. In practical terms, this includes:</p>
+    <ul>
+      <li><strong>Foreclosure</strong> -- Mortgage lenders must halt foreclosure proceedings, including scheduled sales</li>
+      <li><strong>Repossession</strong> -- Auto lenders and other secured creditors cannot repossess collateral</li>
+      <li><strong>Wage garnishment</strong> -- Employers must stop withholding wages for creditor judgments</li>
+      <li><strong>Lawsuits</strong> -- Pending litigation against the debtor is frozen; new suits cannot be filed</li>
+      <li><strong>Collection calls and letters</strong> -- All collection activity must cease immediately</li>
+      <li><strong>Utility disconnections</strong> -- Utilities cannot shut off service for the first 20 days (with conditions)</li>
+      <li><strong>Bank account levies</strong> -- Creditors cannot freeze or seize bank accounts</li>
+      <li><strong>Tax liens</strong> -- The IRS and state tax authorities cannot file new liens or continue levy actions</li>
+      <li><strong>Eviction</strong> -- In some circumstances, eviction proceedings are paused (with limitations)</li>
+      <li><strong>Setoff</strong> -- Creditors cannot offset mutual debts without court permission</li>
+    </ul>
+    <p>For a detailed breakdown of each category, see <a href="/what-it-stops.html">What the Automatic Stay Stops</a>.</p>
+  </div>
+
+  <div class="content-section">
+    <h2>What the Stay Does NOT Stop</h2>
+    <p>The automatic stay is broad, but it is not absolute. Section 362(b) carves out over 25 exceptions. The most commonly encountered include:</p>
+    <ul>
+      <li><strong>Criminal proceedings</strong> -- The government can prosecute criminal cases regardless of the filing</li>
+      <li><strong>Domestic support obligations</strong> -- Child support and alimony collection continues</li>
+      <li><strong>Certain tax proceedings</strong> -- Tax audits and assessments may continue</li>
+      <li><strong>Evictions with prior judgment</strong> -- If the landlord already has a judgment for possession before the filing, eviction may proceed</li>
+      <li><strong>Police and regulatory power</strong> -- Government enforcement actions for public health and safety are not stayed</li>
+    </ul>
+    <p>See the full list at <a href="/exceptions.html">Exceptions to the Automatic Stay</a>.</p>
+  </div>
+
+  <div class="content-section">
+    <h2>When the Stay Disappears or Is Limited</h2>
+
+    <div class="highlight-box warning">
+      <p><strong>Warning for repeat filers:</strong> If you filed a previous bankruptcy case that was dismissed within the past year, you may receive only 30 days of stay protection -- or no automatic stay at all.</p>
+    </div>
+
+    <h3>Second Filing Within One Year -- Section 362(c)(3)</h3>
+    <p>If a debtor had one prior case pending within the preceding one-year period and that case was dismissed, the automatic stay in the new case expires after 30 days unless the debtor files a motion and the court extends it. The debtor must prove the new case was filed in good faith. This is common when a Chapter 13 case is dismissed for missed plan payments and the debtor refiles.</p>
+
+    <h3>Third or More Filings Within One Year -- Section 362(c)(4)</h3>
+    <p>If the debtor had two or more prior cases pending within the preceding one-year period and those cases were dismissed, the new filing does not create any automatic stay at all. The debtor must affirmatively ask the court to impose a stay and demonstrate good faith. Until the court acts, creditors may proceed as if no bankruptcy was filed.</p>
+
+    <p>For the complete breakdown of <a href="https://serialfiler.org" title="Repeat Bankruptcy Filers -- Open Bankruptcy Project" target="_blank" rel="noopener">repeat filer</a> rules, see <a href="/serial-filer-limits.html">Automatic Stay Limits for Repeat Filers</a>.</p>
+  </div>
+
+  <div class="content-section">
+    <h2>Creditor Violations and Your Remedies</h2>
+    <p>When a creditor violates the automatic stay, they are acting in contempt of a federal court order. Under <a href="https://www.law.cornell.edu/uscode/text/11/362">11 U.S.C. Section 362(k)</a>, an individual debtor injured by a willful violation can recover:</p>
+    <ul>
+      <li>Actual damages (including out-of-pocket costs, lost wages, and emotional distress in some circuits)</li>
+      <li>Costs and attorney fees incurred in enforcing the stay</li>
+      <li>Punitive damages in appropriate circumstances</li>
+    </ul>
+    <p>Common violations include continuing collection calls after notice of the filing, repossessing a vehicle after the petition date, proceeding with a foreclosure sale, or garnishing wages after the employer has been notified. The creditor's lack of knowledge of the filing is not a defense to the automatic nature of the stay, although it may be relevant to whether the violation was "willful."</p>
+    <p>Learn how to document violations and seek damages at <a href="/violations.html">Creditor Violated the Automatic Stay?</a></p>
+  </div>
+
+  <div class="content-section">
+    <h2>Motions for Relief from Stay</h2>
+    <p>Creditors are not powerless against the stay. Any party in interest can file a <a href="https://relieffromstay.org" title="Motion for Relief from Stay -- Open Bankruptcy Project" target="_blank" rel="noopener">motion for relief</a> from stay under Section 362(d), asking the court to lift the stay so the creditor can proceed with its rights -- typically foreclosure on real property or repossession of a vehicle.</p>
+    <p>The court will grant relief for "cause" (which includes lack of adequate protection of the creditor's interest) or if the debtor has no equity in the property and the property is not necessary for an effective reorganization. The court must rule within 30 days of a request for a final hearing, or relief may be granted by operation of law.</p>
+    <p>For details on how these motions work and how to respond, see <a href="/relief-from-stay.html">Motions for Relief from Stay</a>.</p>
+  </div>
+
+  <div class="content-section">
+    <h2>Explore This Guide</h2>
+    <div class="page-grid">
+      <div class="page-card">
+        <h3><a href="/what-it-stops.html">What the Stay Stops</a></h3>
+        <p>Complete list of creditor actions halted by the automatic stay, including foreclosure, repossession, garnishment, and more.</p>
+      </div>
+      <div class="page-card">
+        <h3><a href="/violations.html">Stay Violations</a></h3>
+        <p>How to document violations, file a motion for contempt, and recover damages under Section 362(k).</p>
+      </div>
+      <div class="page-card">
+        <h3><a href="/serial-filer-limits.html">Repeat Filer Limits</a></h3>
+        <p>The 30-day stay termination and no-stay rules under Sections 362(c)(3) and 362(c)(4).</p>
+      </div>
+      <div class="page-card">
+        <h3><a href="/relief-from-stay.html">Relief from Stay</a></h3>
+        <p>When creditors ask the court to lift the stay, what grounds they need, and how to oppose.</p>
+      </div>
+      <div class="page-card">
+        <h3><a href="/exceptions.html">Exceptions</a></h3>
+        <p>The full list of actions not covered by the automatic stay under Section 362(b).</p>
+      </div>
+      <div class="page-card">
+        <h3><a href="https://1328f.com/check.html">Discharge Screener</a></h3>
+        <p>Free tool to check whether Section 1328(f) bars a Chapter 13 discharge based on prior filings.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="content-section">
+    <h2>Frequently Asked Questions</h2>
+
+    <div class="faq-item">
+      <h3>What does the automatic stay stop?</h3>
+      <p>The automatic stay under 11 U.S.C. Section 362(a) stops foreclosures, repossessions, wage garnishments, lawsuits, collection calls, utility shutoffs, and most other creditor actions against the debtor or the debtor's property. It takes effect immediately when the bankruptcy petition is filed.</p>
+    </div>
+
+    <div class="faq-item">
+      <h3>How long does the automatic stay last?</h3>
+      <p>For first-time filers, the automatic stay lasts for the duration of the bankruptcy case -- typically 3-5 years in Chapter 13 or 3-6 months in Chapter 7. For repeat filers, special limits apply under Sections 362(c)(3) and 362(c)(4).</p>
+    </div>
+
+    <div class="faq-item">
+      <h3>Can creditors get around the automatic stay?</h3>
+      <p>Yes. Creditors can file a motion for relief from stay asking the court to allow them to proceed with foreclosure, repossession, or other collection actions. The court will grant relief if the creditor shows cause, such as lack of adequate protection, or that the debtor has no equity in the property and it is not necessary for reorganization.</p>
+    </div>
+
+    <div class="faq-item">
+      <h3>What if a creditor violates the automatic stay?</h3>
+      <p>Under 11 U.S.C. Section 362(k), an individual debtor injured by a willful violation of the automatic stay can recover actual damages, costs, attorney fees, and in appropriate circumstances, punitive damages. The debtor must file a motion for contempt in the bankruptcy court.</p>
+    </div>
+
+    <div class="faq-item">
+      <h3>Does the automatic stay apply to all debts?</h3>
+      <p>No. Section 362(b) lists over 25 exceptions. Criminal proceedings, domestic support obligations (child support and alimony), certain tax proceedings, and some eviction actions are not stopped by the automatic stay. Additionally, repeat filers may receive reduced or no stay protection under Sections 362(c)(3) and 362(c)(4).</p>
+    </div>
+  </div>
+
+  <div class="content-section">
+    <h2>Legal References</h2>
+    <ul>
+      <li><a href="https://www.law.cornell.edu/uscode/text/11/362">11 U.S.C. Section 362</a> -- Automatic stay</li>
+      <li><a href="https://www.law.cornell.edu/uscode/text/11/361">11 U.S.C. Section 361</a> -- Adequate protection</li>
+      <li><a href="https://www.law.cornell.edu/uscode/text/11/1301">11 U.S.C. Section 1301</a> -- Stay of action against co-debtor (Chapter 13)</li>
+      <li><a href="https://www.law.cornell.edu/uscode/text/11/362#k">11 U.S.C. Section 362(k)</a> -- Damages for willful violations</li>
+      <li><a href="https://www.law.cornell.edu/uscode/text/11/105">11 U.S.C. Section 105(a)</a> -- Court's general power to enforce the stay</li>
+      <li><a href="https://1328f.com/section-362-automatic-stay.html">Section 362 Overview on 1328f.com</a> -- Additional context and research data</li>
+    </ul>
+  </div>
+
+</main>
+
+<footer class="network-footer" role="contentinfo">
+  <p><strong>Open Bankruptcy Project</strong></p>
+  <div class="links">
+    <a href="https://automaticstay.org">automaticstay.org</a>
+    <a href="https://1328f.com">1328f.com</a>
+    <a href="https://1328f.org">1328f.org</a>
+    <a href="https://github.com/ilikemath9999/bankruptcy-discharge-screener">GitHub</a>
+  </div>
+  <p class="disclaimer">This site provides general information only and does not constitute legal advice. No attorney-client relationship is created. Consult a licensed attorney for advice on your specific situation.</p>
+</footer>
+<div style="background:#161b22;border:1px solid #30363d;border-radius:6px;padding:1.5rem;text-align:center;max-width:900px;margin:2rem auto 0">
+  <p style="color:#f0f6fc;font-size:1.1rem;font-weight:600;margin-bottom:0.25rem">PACER cases made free through RECAP: <span id="recap-count" style="color:#58a6ff">0</span> of 37.9 million</p>
+  <p style="color:#9eaab6;font-size:0.85rem;margin-bottom:0.75rem">Every document we access becomes permanently free for the next researcher, attorney, or debtor.</p>
+  <div style="background:#21262d;border-radius:6px;height:22px;overflow:hidden;margin:0.75rem auto;max-width:400px"><div style="background:#161b22;border:1px solid #30363d;border-radius:6px;padding:1.5rem;text-align:center;max-width:600px;margin:2rem auto">
+  <p style="color:#f0f6fc;font-size:1rem;font-weight:600;margin-bottom:0.5rem">Stay updated on new datasets and research findings</p>
+  <p style="color:#9eaab6;font-size:0.85rem;margin-bottom:1rem">No spam. No marketing. Just data.</p>
+  <form action="https://formspree.io/f/xkoqeyzw" method="POST" style="display:flex;gap:0.5rem;justify-content:center;flex-wrap:wrap">
+    <input type="email" name="email" placeholder="your@email.com" required style="padding:0.5rem 1rem;border-radius:6px;border:1px solid #30363d;background:#0d1117;color:#f0f6fc;font-size:0.9rem;min-width:250px">
+    <input type="hidden" name="_subject" value="BTN Research Subscriber">
+    <button type="submit" style="padding:0.5rem 1.5rem;border-radius:6px;border:none;background:#238636;color:#fff;font-weight:600;font-size:0.9rem;cursor:pointer">Subscribe</button>
+  </form>
+</div>
+<div id="recap-bar" style="background:linear-gradient(90deg,#238636,#2ea043);height:100%;width:0%;border-radius:6px;min-width:2px"></div></div>
+  <p style="margin-bottom:0.25rem"><span id="recap-donated" style="color:#58a6ff;font-size:1.2rem;font-weight:700">$0</span> <span style="color:#9eaab6">of</span> <span style="color:#f0f6fc;font-size:1.2rem;font-weight:700">$5,000</span> <span style="color:#9eaab6">Q1 PACER research goal</span></p>
+  <p style="color:#9eaab6;font-size:0.8rem;margin-bottom:0.75rem">1,500+ hours. No grants, no institutional backing.</p>
+  <a href="https://1328f.org/support/" style="display:inline-block;background:#238636;color:#fff;padding:0.5rem 1.5rem;border-radius:6px;font-weight:600;font-size:0.9rem;text-decoration:none">Fund this research</a>
+</div>
+<script>fetch("https://1328f.com/data/recap-count.json").then(function(r){return r.json()}).then(function(d){var e=document.getElementById("recap-count");if(e&&d.count!==undefined)e.textContent=d.count.toLocaleString();var b=document.getElementById("recap-bar");if(b&&d.count)b.style.width=Math.min(100,d.count/37900000*100).toFixed(4)+"%";var dn=document.getElementById("recap-donated");if(dn&&d.donated!==undefined)dn.textContent="$"+d.donated.toLocaleString()}).catch(function(){})</script>
+
+<script src="/btn-engage.js"></script>
+</body>
+</html>
