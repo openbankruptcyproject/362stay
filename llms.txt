@@ -1,21 +1,14 @@
 # Automatic Stay in Bankruptcy - Section 362 Guide [2026] - 362 Stay
-> Last updated: 2026-05-01
+> Last updated: 2026-09-25
 
-> The automatic stay stops creditor actions the moment you file bankruptcy. Learn what it covers, exceptions, and violations. Free 2026 Section 3...
+> The automatic stay stops creditor actions the moment you file bankruptcy. Learn what it covers, exceptions, and violations.
 
 ## About
 automaticstay.org is part of the Open Bankruptcy Project (openbankruptcyproject.org), a 501(c)(3) nonprofit building free, open-source tools for bankruptcy court transparency.
 
 ## Key Pages
-- Automatic Stay: Business vs Personal Bankruptcy - 362 Stay: https://automaticstay.org/business-vs-personal.html
-- How Long Does the Automatic Stay Last? - 362 Stay: https://automaticstay.org/duration.html
-- Exceptions to the Automatic Stay: Section 362(b) - 362 Stay: https://automaticstay.org/exceptions.html
 - Automatic Stay in Bankruptcy - Section 362 Guide [2026] - 362 Stay: https://automaticstay.org/
 - Motions for Relief from Stay: When Creditors Ask to Proceed - 362 Stay: https://automaticstay.org/relief-from-stay.html
-- Automatic Stay Limits for Repeat Filers: 362(c)(3) and 362(c)(4) - 362 Stay: https://automaticstay.org/serial-filer-limits.html
-- Automatic Stay Exceptions - What Is Not Covered - 362 Stay: https://automaticstay.org/stay-exceptions.html
-- Creditor Violated the Automatic Stay? What to Do - 362 Stay: https://automaticstay.org/violations.html
-- What the Automatic Stay Stops: Complete List - 362 Stay: https://automaticstay.org/what-it-stops.html
 - Privacy Policy - 362stay: https://362stay/privacy.html
 
 ## Contact
